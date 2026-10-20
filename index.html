@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rclonea – polityka prywatności</title>
+  <title>Free Folder Sync – privacy policy</title>
   <style>
     :root { color-scheme: light dark; }
     body { font-family: system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.6; }
@@ -11,38 +11,111 @@
     h2 { font-size: 1.15rem; margin-top: 2rem; }
     hr { margin: 2.5rem 0; opacity: .3; }
     small { opacity: .7; }
+    code { font-size: .95em; }
   </style>
 </head>
 <body>
-  <h1>Rclonea</h1>
-  <p>Rclonea to prywatne, niekomercyjne narzędzie oparte na <a href="https://rclone.org">rclone</a>,
-     służące wyłącznie jego autorowi do synchronizacji i kopii zapasowych plików na własnym Dysku Google.
-     Aplikacja nie jest oferowana publicznie.</p>
+  <p><small><a href="#pl">Polski ↓</a></small></p>
 
-  <h2 id="privacy">Polityka prywatności</h2>
+  <h1>Free Folder Sync</h1>
+  <p>Free Folder Sync is a free, open-source Android app that copies one folder from your phone
+     (for example Signal backups, photos or documents) to a folder on your own Google Drive, once a day.
+     No ads, no tracking, no servers of its own.</p>
+  <p>Source code (GPL-3.0) and downloads:
+     <a href="https://github.com/adawro/free-folder-sync-gdrive-android">github.com/adawro/free-folder-sync-gdrive-android</a></p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+
+  <h3>What the app accesses</h3>
   <ul>
-    <li>Aplikacja uzyskuje dostęp do Dysku Google wyłącznie na koncie, na którym użytkownik sam udzielił zgody.</li>
-    <li>Dane z Dysku Google są przetwarzane tylko lokalnie, na urządzeniu użytkownika, w celu kopiowania i synchronizacji plików.</li>
-    <li>Aplikacja nie zbiera, nie przechowuje na zewnętrznych serwerach, nie sprzedaje ani nie udostępnia żadnych danych osobom trzecim.</li>
-    <li>Tokeny dostępu są przechowywane wyłącznie lokalnie w pliku konfiguracyjnym rclone.</li>
-    <li>Zgodę można w każdej chwili cofnąć na stronie
+    <li><b>The phone folder you choose</b> with the Android system folder picker. The app reads only the files
+        in that folder, only to upload them to your Google Drive. It does not ask for access to all files.</li>
+    <li><b>Google Drive, limited scope <code>drive.file</code>.</b> The app can see and change only the files and
+        folders that it created itself (the destination folder and the files it uploaded). It cannot see or read
+        any other files on your Google Drive.</li>
+  </ul>
+  <p>The app does not access your contacts, email, location, photos outside the chosen folder, or any other
+     personal data.</p>
+
+  <h3>Where your data goes</h3>
+  <ul>
+    <li>Files are uploaded directly from your phone to Google Drive (Google's servers, over HTTPS) under your own
+        Google account. They never pass through any server of the developer.</li>
+    <li>The app contains no analytics, advertising or crash-reporting libraries. The developer does not collect,
+        receive, store, sell or share any of your data.</li>
+  </ul>
+
+  <h3>What is stored on your phone</h3>
+  <ul>
+    <li>Your settings, a list of already uploaded files (name, size, checksum, Drive file ID) and a short activity
+        log, kept in the app's private storage.</li>
+    <li>Sign-in: either managed by Google Play services, or – if you use your own Google Cloud OAuth client –
+        a refresh token encrypted with a key from the Android Keystore.</li>
+    <li>All of this is removed when you uninstall the app or clear its data.</li>
+  </ul>
+
+  <h3>Deleting data and revoking access</h3>
+  <ul>
+    <li>The app never deletes files on your Google Drive. Uploaded files stay in your Drive and you can delete them
+        there at any time.</li>
+    <li>You can revoke the app's access to your Google account at any time at
         <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
   </ul>
 
-  <h2>Kontakt</h2>
-  <p><!-- wpisz swój e-mail, np. ten sam co w Google Cloud --> yooko34@gmail.com</p>
+  <h3>Google API Services User Data Policy</h3>
+  <p>Free Folder Sync's use and transfer of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+     including the Limited Use requirements. Data from Google APIs is used only to provide the folder backup feature
+     to you, is not transferred to anyone, and is not used for advertising.</p>
+
+  <h2 id="terms">Terms of Use</h2>
+  <ul>
+    <li>The app is free and open source, licensed under GPL-3.0, and provided “as is”, without any warranty.</li>
+    <li>You are responsible for your own data. Keep other copies of anything important; the developer is not liable
+        for lost or damaged files.</li>
+    <li>Your use of Google Drive is subject to Google's own terms.</li>
+  </ul>
+
+  <h2 id="contact">Contact</h2>
+  <p>yooko34@gmail.com · or open an issue on
+     <a href="https://github.com/adawro/free-folder-sync-gdrive-android/issues">GitHub</a></p>
 
   <hr>
 
-  <h1 lang="en">Rclonea (English)</h1>
-  <p lang="en">Rclonea is a private, non-commercial tool based on rclone, used solely by its author to back up
-     and sync files with their own Google Drive. It is not offered to the public.</p>
-  <h2 lang="en">Privacy Policy</h2>
-  <p lang="en">The app accesses Google Drive only for the account that granted consent. Data is processed locally
-     on the user's device only. No data is collected, stored on external servers, sold or shared with third parties.
-     Access tokens are stored locally in the rclone config file. Access can be revoked at any time at
-     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h1 id="pl" lang="pl">Free Folder Sync (polski)</h1>
+  <div lang="pl">
+  <p>Free Folder Sync to darmowa aplikacja na Androida o otwartym kodzie, która raz dziennie kopiuje jeden folder
+     z telefonu (np. kopie Signala, zdjęcia, dokumenty) do folderu na Twoim Dysku Google. Bez reklam, bez śledzenia,
+     bez własnych serwerów.</p>
 
-  <p><small>Ostatnia aktualizacja / Last updated: 2026-10-05</small></p>
+  <h2 id="prywatnosc">Polityka prywatności</h2>
+  <ul>
+    <li><b>Folder w telefonie</b> wybierasz systemowym oknem Androida. Aplikacja czyta tylko pliki z tego folderu
+        i tylko po to, żeby wysłać je na Twój Dysk. Nie prosi o dostęp do wszystkich plików.</li>
+    <li><b>Dysk Google z zakresem <code>drive.file</code>:</b> aplikacja widzi i zmienia wyłącznie pliki i foldery,
+        które sama utworzyła. Pozostałych plików na Twoim Dysku nie widzi.</li>
+    <li>Pliki idą bezpośrednio z telefonu na serwery Google (HTTPS), na Twoje konto. Nie przechodzą przez żaden
+        serwer autora. Aplikacja nie ma analityki, reklam ani raportowania błędów; autor nie zbiera, nie otrzymuje,
+        nie sprzedaje i nie udostępnia żadnych Twoich danych.</li>
+    <li>Na telefonie zostają: ustawienia, lista wysłanych plików (nazwa, rozmiar, suma kontrolna, ID na Dysku),
+        krótki dziennik oraz dane logowania (w Usługach Google Play albo – przy własnym kliencie OAuth – token
+        zaszyfrowany kluczem z Android Keystore). Odinstalowanie aplikacji usuwa je wszystkie.</li>
+    <li>Aplikacja nigdy nie usuwa plików z Dysku Google.</li>
+    <li>Dostęp możesz w każdej chwili cofnąć na stronie
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Wykorzystanie danych z interfejsów API Google jest zgodne z
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        w tym z wymaganiami Limited Use.</li>
+  </ul>
+
+  <h2 id="warunki">Warunki korzystania</h2>
+  <p>Aplikacja jest darmowa, na licencji GPL-3.0, udostępniana „tak jak jest”, bez gwarancji. Za swoje dane
+     odpowiadasz sam – ważne pliki trzymaj także w innym miejscu.</p>
+
+  <h2>Kontakt</h2>
+  <p>yooko34@gmail.com</p>
+  </div>
+
+  <p><small>Last updated / Ostatnia aktualizacja: 2026-10-20</small></p>
 </body>
 </html>
